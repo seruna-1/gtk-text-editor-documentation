@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>GTK Text Editor</title>
+
+		<meta charset="UTF-8" lang="pt-BR" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../hanabi-css/main.css">
+
+	</head>
+
+	<body>
+
+		<main>
+
+			<p>Como o nome genérico sugere, é um editor de texto com código aberto, escrito em C, que usa a bilbioteca GTK4 e é designado para Linux.</p>
+
+			<p>O código fonte está distibuído em vários arquivos de C contidos no diretório [source/]. O ponto de entrada do programa é o arquivo [main.c], que inclui os demais arquivos para ser compilado.</p>
+
+			<p>A compilação pode ser feita pelo script [build.sh], que não requer privilégio root. Basta executá-lo usando algum shell. Exemplo:</p>
+
+			<div class="scroll">
+
+				<p>oksh build.sh</p>
+
+			</div>
+
+			<p>Isso resultará em um binário denominado [gte]. Para instalá-lo em definitivo no sistema, ele deve ser copiado para algúm diretório do PATH (preferencialmente, [/usr/local/bin/]). Essa parte requer privilégio:</p>
+
+			<div class="scroll">
+
+				<p>sudo cp gte /usr/local/bin/</p>
+
+			</div>
+
+			<p>Cada janela contém apenas um arquivo para ser editado e não é possível passar mais de um nome de arquivo pela linha de comando para ser aberto.</p>
+
+			<div class="scroll">
+
+				<p>gte some-file.txt</p>
+
+			</div>
+
+			<p>Várias instâncias do [gte] podem estar abertas ao mesmo tempo. Cada uma é isolada.</p>
+
+		</main>
+
+	</body>
+
+	<script src="../hanabi-css/main.js"></script>
+
+</html>
