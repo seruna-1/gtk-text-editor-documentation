@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>gte_app</title>
+
+		<meta charset="UTF-8" lang="pt-BR" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../hanabi-css/main.css">
+
+	</head>
+
+	<body>
+
+		<main>
+
+			<p>Coisas relacionadas a uma aplicação [gte].</p>
+
+			<p>A aplicação não é criada aqui, mas em [main.c]</p>
+
+			<p>Várias instâncias do [gte] podem estar abertas ao mesmo tempo. A flag [G_APPLICATION_NON_UNIQUE] é passada à função [gtk_application_new], em [main.c], então cada instância é isolada.</p>
+
+			<section>
+
+				<h1>gte_app_reply_open</h1>
+
+				<p>Responde ao sinal [open] emitido pela aplicação, quando há um ou mais arquivos para serem abertos. No entanto, se houver mais de um, a aplicação não iniciará.</p>
+
+				<p>Se houver exatamente um arquivo para ser aberto, seu identificador [GFile] será referenciado e guardado para ser aberto futuramente.</p>
+
+			</section>
+
+			<section>
+
+				<h1>gte_app_reply_activate</h1>
+
+				<p>Responde ao sinal [activate] emitido pela aplicação.</p>
+
+			</section>
+
+			<section>
+
+				<h1>gte_app_close</h1>
+
+				<p>Fecha a aplicação.</p>
+
+			</section>
+		</main>
+
+	</body>
+
+	<script src="../../hanabi-css/main.js"></script>
+
+</html>

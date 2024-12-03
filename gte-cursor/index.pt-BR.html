@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>gte_cursor</title>
+
+		<meta charset="UTF-8" lang="pt-BR" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../hanabi-css/main.css">
+
+	</head>
+
+	<body>
+
+		<main>
+
+			<p>Coisas relacionadas à cursor.</p>
+
+			<h1>gte_cursor_set_position</h1>
+
+			<p>Entrada:</p>
+
+			<ul>
+
+				<li>int line</li>
+
+				<li>int column</li>
+
+			</ul>
+
+			<p>Posiciona o cursor na [line] e [column], que começam a partir de 1 (não de 0) e atualiza o texto de status do cursor [gte_cursor_position_label].</p>
+
+			<p>Não retorna nada.</p>
+
+			<h1>gte_cursor_menu_button_create</h1>
+
+			<p>Não recebe entrada.</p>
+
+			<p>Cria:</p>
+
+			<ul>
+
+				<li>[gte_cursor_menu_button]</li>
+
+				<div>
+
+					<p>Um widget do tipo [GtkMenuButton] que mostra a posição do cursor e, ao ser pressionado, exibe o popover para definí-la.</p>
+
+				</div>
+
+				<li>[gte_cursor_popover]</li>
+
+				<div>
+
+					<p>Um widget do tipo [GtkPopover] que permite que o usuário defina a posição do cursor.</p>
+
+				</div>
+
+			</ul>
+
+			<p>Não retorna nada.</p>
+
+		</main>
+
+	</body>
+
+	<script src="../../hanabi-css/main.js"></script>
+
+</html>
